@@ -17,6 +17,7 @@ Terra development suite
 
 
 <!-- toc -->
+* [Planned features](#planned-features)
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
@@ -36,28 +37,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`rover hello [FILE]`](#rover-hello-file)
 * [`rover help [COMMAND]`](#rover-help-command)
-
-## `rover hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ rover hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ rover hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/terra-money/rover/blob/v0.0.0/src/commands/hello.ts)_
+* [`rover new FILE`](#rover-new-file)
 
 ## `rover help [COMMAND]`
 
@@ -75,4 +56,24 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.3/src/commands/help.ts)_
+
+## `rover new FILE`
+
+Generate a new Terra dapp.
+
+```
+USAGE
+  $ rover new FILE
+
+ARGUMENTS
+  FILE  Output directory for new project.
+
+OPTIONS
+  -f, --force
+
+EXAMPLE
+  $ rover new my-terra-project
+```
+
+_See code: [src/commands/new.ts](https://github.com/terra-money/rover/blob/v0.0.0/src/commands/new.ts)_
 <!-- commandsstop -->
