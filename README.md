@@ -3,6 +3,12 @@ rover
 
 Terra development suite
 
+<!-- toc -->
+* [Planned features](#planned-features)
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
+
 # Planned features 
 
 - [x] Includes a starter smart contract, can be cw-template or similar.
@@ -15,12 +21,6 @@ Terra development suite
   - [ ] Compiling/optimizing smart contracts
   - [ ] Deploying smart contracts to specified network
 
-
-<!-- toc -->
-* [Planned features](#planned-features)
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
 # Usage
 <!-- usage -->
 ```sh-session
