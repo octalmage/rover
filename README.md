@@ -17,6 +17,7 @@ Terra development suite
 - [x] Uses wallet-provider to talk to the sample smart contract provided.
 - [ ] Config file for managing supported networks, and their respective keys.
 - [ ] Implements best practices for dapp frontends.
+- [ ] Artifact management to avoid hardcoding smart contract address in the frontend. 
 - Command line tool (rover) that includes commands to perform the following functions:
   - [x] Scaffolding a new project
   - [ ] Compiling/optimizing smart contracts
