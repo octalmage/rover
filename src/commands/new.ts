@@ -2,7 +2,7 @@ import { Command, flags } from "@oclif/command";
 const copy = require("copy-template-dir");
 const path = require("path");
 
-export default class Hello extends Command {
+export default class New extends Command {
   static description = "Generate a new Terra dapp.";
 
     static examples = [
@@ -22,7 +22,7 @@ export default class Hello extends Command {
   }];
 
   async run() {
-    const { args, flags } = this.parse(Hello);
+    const { args, flags } = this.parse(New);
 
     const vars = { name: args.file };
     const inDir = path.join(__dirname, "..", "..", "template");
