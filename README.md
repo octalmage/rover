@@ -13,9 +13,10 @@ Terra development suite
 
 - [x] Includes a starter smart contract, can be cw-template or similar.
 - [x] Has a directory structure defined for organizing and managing your project.
-- [ ] Includes a frontend starter.
-- [ ] Uses wallet-provider to talk to the sample smart contract provided.
+- [x] Includes a frontend starter.
+- [x] Uses wallet-provider to talk to the sample smart contract provided.
 - [ ] Config file for managing supported networks, and their respective keys.
+- [ ] Implements best practices for dapp frontends.
 - Command line tool (rover) that includes commands to perform the following functions:
   - [x] Scaffolding a new project
   - [ ] Compiling/optimizing smart contracts
