@@ -1,0 +1,53 @@
+{
+  "name": "{{name}}",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "test": "react-scripts test --colors",
+    "coverage": "react-scripts test --coverage",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/{**/*,*}/*.{ts,tsx}": [
+      "cross-env CI=true react-scripts test --colors --findRelatedTests"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.ts?(x)",
+      "!**/*.d.ts?(x)",
+      "!**/*.stories.ts?(x)",
+      "!**/__*__/**"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      "chrome > 60",
+      "firefox > 60",
+      "safari > 12"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@terra-money/terra.js": "^2.0.1",
+    "@terra-money/wallet-provider": "^2.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@types/jest": "^26.0.24",
+    "@types/react": "^17.0.18",
+    "@types/react-dom": "^17.0.9",
+    "cross-env": "^7.0.3",
+    "lint-staged": "^11.1.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.3.5"
+  }
+}
