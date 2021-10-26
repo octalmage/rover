@@ -29,7 +29,7 @@ $ npm install -g rover
 $ rover COMMAND
 running command...
 $ rover (-v|--version|version)
-rover/0.0.0 darwin-x64 node-v16.9.1
+rover/0.0.0 darwin-x64 node-v12.21.0
 $ rover --help [COMMAND]
 USAGE
   $ rover COMMAND
@@ -39,7 +39,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`rover help [COMMAND]`](#rover-help-command)
-* [`rover new FILE`](#rover-new-file)
+* [`rover new DIRECTORY`](#rover-new-directory)
 
 ## `rover help [COMMAND]`
 
@@ -58,16 +58,16 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.3/src/commands/help.ts)_
 
-## `rover new FILE`
+## `rover new DIRECTORY`
 
 Generate a new Terra dapp.
 
 ```
 USAGE
-  $ rover new FILE
+  $ rover new DIRECTORY
 
 ARGUMENTS
-  FILE  Output directory for new project.
+  DIRECTORY  Output directory for new project.
 
 OPTIONS
   -f, --force

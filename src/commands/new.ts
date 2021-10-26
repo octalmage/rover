@@ -16,7 +16,7 @@ export default class New extends Command {
   };
 
   static args = [{ 
-    name: 'file', 
+    name: 'directory', 
     required: true,
     description: 'Output directory for new project.',
   }];
@@ -24,9 +24,9 @@ export default class New extends Command {
   async run() {
     const { args, flags } = this.parse(New);
 
-    const vars = { name: args.file };
+    const vars = { name: args.directory };
     const inDir = path.join(__dirname, "..", "..", "template");
-    const outDir = path.join(process.cwd(), args.file);
+    const outDir = path.join(process.cwd(), args.directory);
 
     copy(inDir, outDir, vars, (err: string | null, createdFiles: string[]) => {
       if (err) throw err;
